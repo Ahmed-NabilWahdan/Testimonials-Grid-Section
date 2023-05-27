@@ -25,13 +25,15 @@ Users should be able to:
 
 ### Screenshots
 - **DESKTOP VIEW**
+---
 ![DESKTOP VIEW](./screenshots/desktop-view.jpeg)
 - **MOBILE VIEW**
+---
 ![MOBILE VIEW](./screenshots/mobile-view.jpeg)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My solutions page](https://www.frontendmentor.io/profile/Ahmed-NabilWahdan/solutions)
+- Live Site URL: [Live site by GitHub](https://ahmed-nabilwahdan.github.io/Testimonials-Grid-Section/)
 
 ## My process
 
@@ -44,5 +46,4 @@ Users should be able to:
 - Desktop-first workflow
 
 ## Author
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Ahmed-NabilWahdan](https://www.frontendmentor.io/profile/Ahmed-NabilWahdan)
