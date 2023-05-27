@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    /* Primary */
+    --color-moderate-violet: hsl(263, 55%, 52%);
+    --color-veryDark-grayish-blue: hsl(217, 19%, 35%);
+    --color-veryDark-blackish-blue: hsl(219, 29%, 14%);
+
+    /* Neutral */
+    --color-light-gray: hsl(0, 0%, 81%);
+    --color-light-grayish-blue: hsl(210, 46%, 95%);
+
+    --font-name: 'Barlow Semi Condensed', sans-serif;
+    --font-size: 13px;
+    --font-weight-medium: 500;
+    --font-weight-semiBold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 25px;
+    background-color: var(--color-light-grayish-blue);
+    font-family: var(--font-name);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+section {
+    border-radius: 7px;
+    padding: 25px 33px;
+    box-shadow: 30px 40px 40px hsl(219, 29%, 14%, 0.1);
+}
+
+section .header {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.header img {
+    border-radius: 50%;
+    width: 28px;
+    box-shadow: 0 0 0 2.5px rgba(255, 255, 255, 0.3);
+    margin-right: 18px;
+}
+
+.header .info p:nth-of-type(2) {
+    font-size: 11px;
+    opacity: 0.5;
+}
+
+article h2 {
+    margin-bottom: 20px;
+}
+
+article p {
+    opacity: 0.7;
+    line-height: 1.4;
+}
+
+.daniel {
+    color: white;
+    background-color: var(--color-moderate-violet);
+    grid-column: span 2;
+    position: relative;
+    z-index: 1;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    right: 16.5%;
+    z-index: 0;
+}
+
+.daniel .info {
+    position: relative;
+    z-index: 1;
+}
+
+.daniel article {
+    position: relative;
+    z-index: 1;
+}
+
+.daniel img {
+    position: relative;
+    z-index: 1;
+}
+
+.jonathan {
+    color: white;
+    background-color: var(--color-veryDark-grayish-blue);
+}
+
+.jeanette {
+    color: black;
+    background-color: white;
+    grid-column: 1 / 2;
+}
+
+.kira {
+    color: black;
+    background-color: white;
+    grid-column: 4;
+    grid-row: 1 / 3;
+
+}
+
+.patrick {
+    color: white;
+    background-color: var(--color-veryDark-blackish-blue);
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+
+/* UNDER 960px */
+@media screen and (max-width:960px) {
+    main {
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+
+    .daniel {
+        grid-column: span 4;
+        grid-row: 1;
+    }
+
+    .jonathan {
+        grid-column: span 4;
+        grid-row: 2;
+    }
+
+    .jeanette {
+        grid-column: span 4;
+        grid-row: 3;
+
+    }
+
+    .patrick {
+        grid-column: span 4;
+        grid-row: 4;
+
+    }
+
+    .kira {
+        grid-column: span 4;
+        grid-row: 5;
+    }
+}
